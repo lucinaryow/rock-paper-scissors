@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@400;700&display=swap");
+
+
+html {
+    min-height: 100%;
+    background: #27374D;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background: #375071;
+    font-family: 'Bangers', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-block: 1rem;
+    letter-spacing: 0.5rem;
+    color: #EBAF5C;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 1rem;
+    color: #C8B192;
+    padding-inline: 1rem;
+}
+
+
+
+.options {
+    display: flex;
+    gap: 2rem;
+}
+
+.prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 400px;
+    height: 250x;
+    border: 1px solid #27374D;
+    border-radius: 1rem;
+    position: fixed;
+    inset: 50% 0 0 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    z-index: 100;
+    background: #232933bd;
+    color: #EBAF5C;
+}
+
+.prompt button {
+    min-width: 200px;
+    font-size: 2rem;
+    border-radius: .5rem;
+    padding: 0.5rem;
+    background: #232933;
+    color: #EBAF5C;
+    box-shadow: 0.4rem 0.2rem 0.2rem #1d293a;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    background-color: #2b3c549e;
+    display: none;
+}
+
+.result-explanation>:first-child {
+    margin-block-end: 1rem;
+}
+
+.result-explanation {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+
+}
+
+.result-explanation p {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.player-computer-choice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 5rem;
+
+}
+
+.player-computer-choice>* {
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.scoreCard {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-block: 1rem;
+    color: white;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block-start: 1rem;
+}
+
+.options>* {
+    font-size: 5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: #2b3c54;
+    transition: all ease-in;
+}
+
+.options>*:hover {
+    transform: scale(120%);
+    box-shadow: 0.4rem 0.2rem 0.2rem #1d293a;
+    cursor: pointer;
+}

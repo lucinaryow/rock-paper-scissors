@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="shortcut icon" type="x-icon" href="gamepad-solid.svg">
+</head>
+
+<body>
+    <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+    <section>
+        <div class="result-explanation">
+            <h1 class="result">Are you ready?</h1>
+            <p class="explanation">Choose your weapon, first to reach 5 points win</p>
+        </div>
+        <div class="player-computer-choice">
+            <div class="player-choice">❔</div>
+            <div class="computer-choice">❔</div>
+        </div>
+        <div class="scoreCard">
+            <h2 class="player-score">Player 1: <span>0</span></h2>
+            <h2 class="computer-score">Computer: <span>0</span></h2>
+        </div>
+        <div class="options">
+            <div class="paper" aria-label="paper">🤚</div>
+            <div class="scissors" aria-label="scissors">✌️</div>
+            <div class="rock" aria-label="rock">✊</div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="prompt">
+            <h2></h2>
+            <button class="reset">Play Again?</button>
+        </div>
+    </div>
+    <script src="public/main.js"></script>
+</body>
+
+</html>
